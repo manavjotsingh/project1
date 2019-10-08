@@ -300,20 +300,29 @@ h2 {
 }
 
 .subscribe {
-    position: absolute;
+    position: relative;
     background-color: #e2574c;
     cursor: pointer;
     color: white;
     font-weight: 700;
     font-family: 'Raleway', sans-serif;
-    /* right: 0.25rem; */
-    /* top: 0.25rem; */
-    /* padding: 0.25rem 1.5rem; */
+    border-radius: 50px;  /* for making the button round*/
+    font-size: 1rem;
+    line-height: 1.8rem;
+    padding: .5rem 1.5rem;
+    z-index: 100;
+    left: 21.9rem;
+    top: -3.05rem;
 }
 
 .your-email {
     width: 100%;
-    padding: .5rem 150px .5rem 1.75rem;
+    padding: .5rem 9.5rem .5rem 1.75rem;
+    border-radius: 50px;  /* for making the box round*/
+    /* making the email form bigger */
+    font-size: 1rem;
+    line-height: 2rem;
+    z-index: 1;
 }
 
 /* footer css */
