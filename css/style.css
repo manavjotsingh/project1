@@ -325,6 +325,10 @@ h2 {
     z-index: 1;
 }
 
+.emailform {
+    padding-top: 2rem;
+}
+
 /* footer css */
 
 .indexfooter {
