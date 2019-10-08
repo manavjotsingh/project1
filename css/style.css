@@ -1,0 +1,454 @@
+/* Extra helpers and reset */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* fonts */
+
+/* body css */
+
+.body {
+    color: #2d2d2d;
+}
+
+/* Header css */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 16px 20px 8px 20px;
+    max-width: 77.5rem;
+    text-transform: uppercase;
+    font-family: "Raleway";
+    /* position: fixed;    */
+    /* left: 20%; */
+    /* right: 20%;     */
+    margin: auto;
+}
+
+.navi {
+    flex: 1 0 100%;
+}
+
+.navi ul {
+    display: flex;
+    flex-wrap: wrap;
+    /* text-align: center; */
+    justify-content: center;
+    width: 100%;
+    padding-top: .5rem;
+    height: 30px;
+    border-top: 1px solid #d7d7d7;
+}
+
+.mainlogo {
+    width: 180px;
+    height: 60px;
+    order: -2;
+    flex: 1 0 50%;
+}
+
+.mainlogo img {
+    width: 120px;
+    height: 50px;
+}
+
+.header nav a {
+    text-decoration: none;
+    margin: 0px 14px;
+    font-size: .9rem;
+}
+
+.header nav a:link, .header nav a:visited, .header nav a:active {
+    color: #e2574c;
+}
+
+.header nav a:hover {
+    color: #a03d36;
+}
+
+.cart {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 180px;
+    height: 60px;
+    align-self: end;
+    order: -2;
+    flex: 1 0 50%;
+}
+
+.cart img {
+    width: 48px;
+    height: 48px;
+}
+
+/* banner css */
+
+.banner {
+    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/banner-girl.png), url(../images/flower-bkgd.jpg);
+    background-repeat: no-repeat, no-repeat, repeat;
+    background-position: center, center 60px, center;
+    background-size: contain, 150px, cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+.banner h2 {
+    font-size: 1rem;
+    font-family: "Raleway";
+    /* padding-bottom: 11px; */
+    text-transform: uppercase;
+}
+
+.seasons {
+    font-size: 2rem;
+    /* padding-top: 9px; */
+    font-family: "Playfair Display";
+}
+
+/* about section css */
+
+.about {
+    padding: 64px 0;
+    display: flex;
+}
+
+.about div {
+    height: 135px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: 0 .5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: "Playfair Display";
+    font-style: italic;
+    margin: 0px 0px 24px 0px;
+}
+
+.bbold {
+    font-weight: 700;
+    font-style: normal;
+}
+
+.about p {
+    font-family: "Raleway";
+    font-size: 1rem;
+    line-height: 2;
+}
+
+/* shop css section */
+
+.shop {
+    font-family: "Raleway";
+    text-transform: uppercase;
+    font-size: 2rem;
+    /* height: 31.5rem; */
+}
+
+.shoplist {
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.shop .shoplist a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 1.5rem;
+}
+
+.shop .mens {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/mens-category.jpg);
+    background-size: cover;
+}
+
+.shop .trends {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/trends-category.jpg);
+    background-size: cover;
+}
+
+.shop .glasses {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/glasses-category.jpg);
+    background-size: cover;
+}
+
+.shop .sale {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/sale-category.jpg);
+    background-size: cover;
+}
+
+.shop .bags {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/bags-category.jpg);
+    background-size: cover;
+}
+
+.shop .womens {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/womens-category.jpg);
+    background-size: cover;
+}
+
+.shop .big {
+    border: 4px solid white;
+    height: auto;
+    flex: 2 0 100%;
+}
+
+.shop .small {
+    border: 4px solid white;
+    height: auto;
+    flex: 1 0 50%;
+}
+
+.small, .big {
+    padding: 22% 0;
+}
+
+/* bestsellers css */
+
+.bestsellers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    Width: 100%;
+    max-width: 77.5rem;
+    padding: 4rem 0;
+}
+
+.bestsellers-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.bestsellers h2 {
+    text-align: center;
+}
+
+.bestlistbox {
+    padding: 3rem 2rem;
+    text-align: center;
+    font-family: "Raleway";
+    color: #969696;
+}
+
+.product-type {
+    margin-bottom: .75rem;
+    text-transform: uppercase;
+    font-size: .75rem;
+}
+
+.bestlistbox h4 {
+    margin-bottom: 1rem;
+    color: #e2574c;
+    font-family: "Playfair";
+    font-size: 1.5rem;
+}
+
+
+/* Signup css  */
+
+.signup {
+    padding: 3.5rem 0;
+    /* background: url(../images/wave-bkgd.jpg) center bottom no-repeat; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(../images/wave-bkgd.jpg);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: center;
+    margin: 0px 0px .5rem 0px;
+}
+
+.signup-text {
+    height: 13.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 0rem .5rem;
+}
+
+.signup p {
+    line-height: 2;
+    font-family: 'Raleway';
+    text-align: center;
+}
+
+.subscribe {
+    position: absolute;
+    background-color: #e2574c;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    /* right: 0.25rem; */
+    /* top: 0.25rem; */
+    /* padding: 0.25rem 1.5rem; */
+}
+
+.your-email {
+    width: 100%;
+    padding: .5rem 150px .5rem 1.75rem;
+}
+
+/* footer css */
+
+.indexfooter {
+    background: #242424;
+    padding: 4rem 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: .875rem;
+    /* display: flex;
+
+flex-direction: column; */
+}
+
+.indexfooter a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.indexfooter a:hover {
+    color: #a03d36;
+}
+
+.rightbox {
+    align-self: flex-end;
+}
+
+.copyright {
+    padding-bottom: 1rem;
+    line-height: 1.5;
+    font-family: "Playfair Display";
+}
+
+.contact {
+    padding-bottom: 1rem;
+    font-family: "Playfair Display";
+}
+
+.socialmedia {
+    margin-top: 2rem;
+    font-family: "Raleway";
+}
+
+.address {
+    color: #969696;
+    line-height: 1.5;
+    font-family: "Playfair Display";
+}
+
+.socialmedia ul {
+    display: flex;
+    justify-content: center;
+}
+
+.socialmedia i {
+    min-width: 2rem;
+}
+
+.socialmedianame {
+    display: none;
+}
+
+/* tablet and desktop css */
+
+@media screen and (min-width: 480px) {}
+
+@media screen and (min-width: 600px) {
+    .cart {
+        order: 0;
+        flex: 1 0 25%;
+    }
+    .mainlogo {
+        flex: 1 0 25%
+    }
+    .navi {
+        flex: 1 0 50%;
+    }
+    .navi ul {
+        border: none;
+
+    }
+    .banner {
+        background-size: contain, 150px, contain;
+    }
+    .seasons {
+        font-size: 3rem;
+    }
+    .about div {
+        max-width: 45rem;
+    }
+    .shop .big {
+        flex: 2 0 50%;
+    }
+    .shop .small {
+        flex: 1 0 25%;
+    }
+    .small, .big {
+        padding: 10% 0;
+    }
+    /* css for singup area */
+    .signup-text {
+        max-width: 45rem;
+        margin: auto;
+    }
+    /* CSS for full size for footer */
+    .indexfooter {
+        padding: 4rem 0rem;
+    }
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        max-width: 77.5rem;
+        margin: auto;
+        padding: 0rem 1rem;
+    }
+    .leftbox {
+        text-align: left;
+    }
+    .rightbox {
+        align-self: auto;
+        padding-right: 2rem;
+    }
+    .rightbox li {
+        text-align: start;
+        height: 2rem;
+    }
+    .socialmedia {
+        margin: 0;
+    }
+    .socialmedia ul {
+        flex-direction: column;
+        text-align: left;
+    }
+    .socialmedianame {
+        display: inline;
+    }
+}
