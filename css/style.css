@@ -16,6 +16,7 @@ html {
     color: #2d2d2d;
 }
 
+
 /* Header css */
 
 .header {
@@ -28,9 +29,12 @@ html {
     text-transform: uppercase;
     font-family: "Raleway";
     /* position: fixed;    */
+    /* top: 0%; */
+    /* overflow: hidden; */
     /* left: 20%; */
     /* right: 20%;     */
     margin: auto;
+    background: white;
 }
 
 .navi {
@@ -103,6 +107,8 @@ html {
     text-align: center;
     justify-content: center;
     color: white;
+    /* below line is for margin for fixed nav */
+    /* margin-top: 6rem; */
 }
 
 .banner h2 {
@@ -270,7 +276,6 @@ h2 {
     font-size: 1.5rem;
 }
 
-
 /* Signup css  */
 
 .signup {
@@ -306,22 +311,24 @@ h2 {
     color: white;
     font-weight: 700;
     font-family: 'Raleway', sans-serif;
-    border-radius: 50px;  /* for making the button round*/
-    font-size: 1rem;
-    line-height: 1.8rem;
+    border-radius: 50px;
+    /* for making the button round*/
+    font-size: .866rem;
+    line-height: 1.5rem;
     padding: .5rem 1.5rem;
     z-index: 100;
-    left: 21.9rem;
-    top: -3.05rem;
+    left: 19.5rem;
+    top: -2.8rem;
 }
 
 .your-email {
     width: 100%;
     padding: .5rem 9.5rem .5rem 1.75rem;
-    border-radius: 50px;  /* for making the box round*/
+    border-radius: 50px;
+    /* for making the box round*/
     /* making the email form bigger */
-    font-size: 1rem;
-    line-height: 2rem;
+    font-size: .75rem;
+    line-height: 1.75rem;
     z-index: 1;
 }
 
@@ -395,6 +402,11 @@ flex-direction: column; */
 @media screen and (min-width: 480px) {}
 
 @media screen and (min-width: 600px) {
+    /* header css for desktop */
+    .header {
+        /* trying to center fixed menu in tablet+ */
+        /* left: 25%; */
+    }
     .cart {
         order: 0;
         flex: 1 0 25%;
@@ -407,16 +419,23 @@ flex-direction: column; */
     }
     .navi ul {
         border: none;
-
     }
+    /* banner css for desktop */
     .banner {
         background-size: contain, 150px, contain;
     }
     .seasons {
         font-size: 3rem;
+        /* about css for desktop */
     }
     .about div {
         max-width: 45rem;
+    }
+    .about p{
+        font-size: 1.1rem;
+    }
+    .about h2{
+        font-size: 2.5rem;
     }
     .shop .big {
         flex: 2 0 50%;
@@ -427,6 +446,7 @@ flex-direction: column; */
     .small, .big {
         padding: 10% 0;
     }
+    
     /* css for singup area */
     .signup-text {
         max-width: 45rem;
