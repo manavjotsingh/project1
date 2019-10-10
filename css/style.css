@@ -43,12 +43,12 @@ html {
 
 .navi ul {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     /* text-align: center; */
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
     padding-top: .5rem;
-    height: 30px;
+    height: 2rem;
     border-top: 1px solid #d7d7d7;
 }
 
@@ -245,12 +245,14 @@ h2 {
     padding: 4rem 0;
 }
 
-.bestsellers-list {
+/* // changed the class name to main-carousel
+
+    .bestsellers-list {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: auto;
-}
+} */
 
 .bestsellers h2 {
     text-align: center;
@@ -298,6 +300,11 @@ h2 {
     padding: 0rem .5rem;
 }
 
+/* just was named wrong, i need to name classes better
+
+.signup .bold {
+    font-weight: 700;
+} */
 .signup p {
     line-height: 2;
     font-family: 'Raleway';
@@ -397,9 +404,22 @@ flex-direction: column; */
     display: none;
 }
 
+/* FLickity */
+
+.flickity-cell {
+    text-align: center;
+}
+
+.flickity-button {
+    display: none;
+}
+
+
 /* tablet and desktop css */
 
-@media screen and (min-width: 480px) {}
+@media screen and (min-width: 480px) {
+
+}
 
 @media screen and (min-width: 600px) {
     /* header css for desktop */
@@ -485,3 +505,24 @@ flex-direction: column; */
         display: inline;
     }
 }
+
+
+
+
+
+/*
+ // flickity
+
+//mobile style
+.carousel-cell {
+    width: 100%;
+    text-align: center;
+  }
+  
+  //media query example
+  @media screen and (min-width: 600px) {
+    .carousel-cell {
+      width: 25%;
+    }
+  }
+  */
