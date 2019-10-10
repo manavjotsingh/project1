@@ -16,7 +16,6 @@ html {
     color: #2d2d2d;
 }
 
-
 /* Header css */
 
 .header {
@@ -25,16 +24,16 @@ html {
     flex-wrap: wrap;
     align-items: center;
     padding: 16px 20px 8px 20px;
-    max-width: 77.5rem;
     text-transform: uppercase;
     font-family: "Raleway";
-    /* position: fixed;    */
-    /* top: 0%; */
-    /* overflow: hidden; */
-    /* left: 20%; */
-    /* right: 20%;     */
     margin: auto;
     background: white;
+    position: fixed; /* top left and right are 0 to avoid unintended margins and padding*/
+    top: 0; 
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    width: 100%;
 }
 
 .navi {
@@ -81,7 +80,6 @@ html {
 .cart {
     display: flex;
     flex-direction: row-reverse;
-    width: 180px;
     height: 60px;
     align-self: end;
     order: -2;
@@ -108,7 +106,8 @@ html {
     justify-content: center;
     color: white;
     /* below line is for margin for fixed nav */
-    /* margin-top: 6rem; */
+    margin-top: 7.5rem;
+
 }
 
 .banner h2 {
@@ -305,6 +304,7 @@ h2 {
 .signup .bold {
     font-weight: 700;
 } */
+
 .signup p {
     line-height: 2;
     font-family: 'Raleway';
@@ -414,19 +414,13 @@ flex-direction: column; */
     display: none;
 }
 
-
 /* tablet and desktop css */
 
-@media screen and (min-width: 480px) {
-
-}
+@media screen and (min-width: 480px) {}
 
 @media screen and (min-width: 600px) {
     /* header css for desktop */
-    .header {
-        /* trying to center fixed menu in tablet+ */
-        /* left: 25%; */
-    }
+
     .cart {
         order: 0;
         flex: 1 0 25%;
@@ -435,7 +429,7 @@ flex-direction: column; */
         flex: 1 0 25%
     }
     .navi {
-        flex: 1 0 50%;
+        flex: 2 0 50%;
     }
     .navi ul {
         border: none;
@@ -443,6 +437,7 @@ flex-direction: column; */
     /* banner css for desktop */
     .banner {
         background-size: contain, 150px, contain;
+        margin-top: 6rem;
     }
     .seasons {
         font-size: 3rem;
@@ -451,10 +446,10 @@ flex-direction: column; */
     .about div {
         max-width: 45rem;
     }
-    .about p{
+    .about p {
         font-size: 1.1rem;
     }
-    .about h2{
+    .about h2 {
         font-size: 2.5rem;
     }
     .shop .big {
@@ -466,7 +461,6 @@ flex-direction: column; */
     .small, .big {
         padding: 10% 0;
     }
-    
     /* css for singup area */
     .signup-text {
         max-width: 45rem;
@@ -505,10 +499,6 @@ flex-direction: column; */
         display: inline;
     }
 }
-
-
-
-
 
 /*
  // flickity
