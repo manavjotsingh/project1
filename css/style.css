@@ -45,10 +45,10 @@ html {
 
 .navi ul {
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     /* text-align: center; */
-    justify-content: space-evenly;
-    width: 100%;
+    justify-content: space-between;
+    /* width: 100%; */
     padding-top: .5rem;
     height: 2rem;
     border-top: 1px solid #d7d7d7;
@@ -68,7 +68,7 @@ html {
 
 .header nav a {
     text-decoration: none;
-    margin: 0px 14px;
+    margin: 0px auto;
     font-size: .9rem;
 }
 
@@ -327,7 +327,7 @@ h2 {
     line-height: 1.5rem;
     padding: .5rem 1.5rem;
     z-index: 100;
-    left: 19.5rem;
+    left: 11.6rem;
     top: -2.8rem;
 }
 
@@ -424,7 +424,7 @@ flex-direction: column; */
 @media screen and (min-width: 600px) {
     /* header css for desktop */
 .headerfixed {
-    width: 77.5rem;
+    max-width: 77.5rem;
     margin: auto;
 }
 
@@ -440,6 +440,7 @@ flex-direction: column; */
     }
     .navi ul {
         border: none;
+        justify-content: space-around;
     }
     /* banner css for desktop */
     .banner {
