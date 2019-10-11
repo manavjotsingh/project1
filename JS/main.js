@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () { //COMPLETE WRAP BEGINNING
 
 
-// getting the message for submitting the email.
-  const messageForm = document.getElementById('emailform');
+// getting the message for submitting the email. first try*****************
+
+const messageForm = document.getElementById('emailform');
 
 const eMail = document.getElementById('youremail');
 
@@ -15,6 +16,17 @@ if (submittedEmail !== "") {
   alert ("Thanks for subscribing!");
 }
 });
+
+
+// getting the message for submitting the email. first try*****************
+
+
+
+
+
+
+
+// cart counter
 
 let clicks = 0;
 
