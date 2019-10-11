@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Aloha Apparel Co.</title>
     <link rel="stylesheet" href="css/reset.css">
@@ -12,48 +12,40 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
-    <script>const elem = document.querySelector('.main-carousel');
-        const flkty = new Flickity(elem, {
-            // options
-            cellAlign: 'left',
-            wrapAround: true,
-            freeScroll: true
-        });</script>
 </head>
 
 <body>
     <!-- The logo, the 4 navagition and cart are in here -->
 
     <header class="header container">
-
         <section class="headerfixed">
-        <div class="mainlogo">
-            <img src="images/aloha-logo.svg" alt="Aloha Apparel Logo" class="mainlogo">
-        </div>
-        <nav class="navi">
-            <ul>
+            <div class="mainlogo">
+                <img src="images/aloha-logo.svg" alt="Aloha Apparel Logo" class="mainlogo">
+            </div>
+            <nav class="navi">
+                <ul>
 
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#shop">Shop</a></li>
-                <li>
-                    <a href="#featured">Featured</a>
-                </li>
-                <li>
-                    <a href="#updates">Updates</a>
-                </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#shop">Shop</a></li>
+                    <li>
+                        <a href="#featured">Featured</a>
+                    </li>
+                    <li>
+                        <a href="#updates">Updates</a>
+                    </li>
 
-                </div>
-            </ul>
-        </nav>
-        <div class="cart">
-            <img src="images/cart-icon.svg" alt="Shopping Cart">
-        </div>
-    </section>
-
-
+                    </div>
+                </ul>
+            </nav>
+            <div class="cart" id="cart">
+                <img src="images/cart-icon.svg" alt="Shopping Cart">
+                <p id="clickcount">?</p>
+            </div>
+            
+        </section>
     </header>
     <!-- Second section with girl -->
     <section class="banner">
@@ -63,7 +55,7 @@
         </div>
     </section>
     <!-- the information with different fonts -->
-    <section class="about">
+    <section class="about" id="about">
         <div>
             <h2>Hand-Crafted <span class="bbold">Styles</span></h2>
             <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of
@@ -72,7 +64,7 @@
         </div>
     </section>
     <!-- the list of products -->
-    <section class="shop">
+    <section class="shop" id="shop">
         <div class="shoplist">
             <div class="big mens">
                 <a href="#">Men's</a>
@@ -95,65 +87,73 @@
         </div>
     </section>
     <!-- most loved products part -->
-    <section class="bestsellers">
+    <section class="bestsellers" id="featured">
         <div class="bestsellers-text">
             <h2>Most-Loved <span class="bbold">Products</span></h2>
         </div>
-        <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": "true", "groupCells": 2 }'>
+        <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": "true", "groupCells": 1 }'>
             <div class="carousel-cell">
                 <div class="blackdress bestlistbox">
                     <img src="images/stretch-knit-dress.jpg" alt="Stretch Knit Dress">
-                    <p class="product-type">Shirts</p>
-                    <h4>Cotton Yellow Tshirt</h4>
-                    <p class="price">$39.00</p>
+                    <p class="product-type">DRESSES</p>
+                    <h4>Stretch Knit Dress</h4>
+                    <p class="price">$169.00</p>
+                    <a href="#cart" class="tocart">Add to cart</a>
                 </div>
             </div>
-            <div class="carousel-cell">
+            <div class="carousel-cell bestlistbox">
                 <div class="blueshirt bestlistbox">
                     <img src="images/cotton-blue-shirt.jpg" alt="Cotton Blue Shirt">
                     <p class="product-type">Shirts</p>
-                    <h4>Cotton Yellow Tshirt</h4>
-                    <p class="price">$39.00</p>
+                    <h4>Cotton Blue Shirt</h4>
+                    <p class="price">$89.00</p>
+                    <a href="#cart" class="tocart">Add to cart</a>
                 </div>
             </div>
             <div class="carousel-cell">
                 <div class="reddress bestlistbox">
                     <img src="images/checked-stretch-dress.jpg" alt="Checked Stretch Dress">
-                    <p class="product-type">Shirts</p>
-                    <h4>Cotton Yellow Tshirt</h4>
-                    <p class="price">$39.00</p>
+                    <p class="product-type">Dresses</p>
+                    <h4>Checked Stretch Dress</h4>
+                    <p class="price">$129.00</p>
+                    <a href="#cart" class="tocart">Add to cart</a>
                 </div>
             </div>
             <div class="carousel-cell">
                 <div class="bagpack bestlistbox">
                     <img src="images/blue-hipster-backpack.jpg" alt="Blue Hipster Backpack">
-                    <p class="product-type">Shirts</p>
-                    <h4>Cotton Yellow Tshirt</h4>
-                    <p class="price">$39.00</p>
+                    <p class="product-type">Bags</p>
+                    <h4>Blue Hipster Backpack</h4>
+                    <p class="price">$69.00</p>
+                    <a href="#cart" class="tocart">Add to cart</a>
+
                 </div>
             </div>
             <div class="carousel-cell">
                 <div class="overall bestlistbox">
                     <img src="images/demin-overall-shorts.jpg" alt="Demin Overall Shorts">
-                    <p class="product-type">Shirts</p>
-                    <h4>Cotton Yellow Tshirt</h4>
-                    <p class="price">$39.00</p>
+                    <p class="product-type">Denim</p>
+                    <h4>Denim Overall Shorts</h4>
+                    <p class="price">$89.00</p>
+                    <a href="#cart" class="tocart">Add to cart</a>
                 </div>
             </div>
             <div class="carousel-cell">
                 <div class="pinkdress bestlistbox">
                     <img src="images/pink-dotted-dress.jpg" alt="Pink Dotted Dress">
-                    <p class="product-type">Shirts</p>
-                    <h4>Cotton Yellow Tshirt</h4>
-                    <p class="price">$39.00</p>
+                    <p class="product-type">Dresses</p>
+                    <h4>Pink Dotted Dress</h4>
+                    <p class="price">$99.00</p>
+                    <a href="#cart" class="tocart">Add to cart</a>
                 </div>
             </div>
             <div class="carousel-cell">
                 <div class="bluedress bestlistbox">
                     <img src="images/blue-silk-dress.jpg" alt="Blue Silk Dress">
-                    <p class="product-type">Shirts</p>
-                    <h4>Cotton Yellow Tshirt</h4>
-                    <p class="price">$39.00</p>
+                    <p class="product-type">Dresses</p>
+                    <h4>Blue Silk Dress</h4>
+                    <p class="price">$119.00</p>
+                    <a href="#cart" class="tocart">Add to cart</a>
                 </div>
             </div>
             <div class="carousel-cell">
@@ -162,88 +162,22 @@
                     <p class="product-type">Shirts</p>
                     <h4>Cotton Yellow Tshirt</h4>
                     <p class="price">$39.00</p>
-                </div>
+                    <a href="#cart" class="tocart">Add to cart</a>
+               </div>
             </div>
         </div>
-        <!-- my old css for carousel area that i followed lab for
-            <div class="main-carousel">
-                <div class="carousel-cell">
-                    <div class="blackdress bestlistbox">
-                        <img src="images/stretch-knit-dress.jpg" alt="Stretch Knit Dress">
-                        <p class="product-type">Shirts</p>
-                        <h4>Cotton Yellow Tshirt</h4>
-                        <p class="price">$39.00</p>
-                    </div>
-                    <div class="carousel-cell">
-                        <div class="blueshirt bestlistbox">
-                            <img src="images/cotton-blue-shirt.jpg" alt="Cotton Blue Shirt">
-                            <p class="product-type">Shirts</p>
-                            <h4>Cotton Yellow Tshirt</h4>
-                            <p class="price">$39.00</p>
-                        </div>
-                    </div>
-                    <div class="carousel-cell">
-                        <div class="reddress bestlistbox">
-                            <img src="images/checked-stretch-dress.jpg" alt="Checked Stretch Dress">
-                            <p class="product-type">Shirts</p>
-                            <h4>Cotton Yellow Tshirt</h4>
-                            <p class="price">$39.00</p>
-                        </div>
-                    </div>
-                    <div class="carousel-cell">
-                        <div class="bagpack bestlistbox">
-                            <img src="images/blue-hipster-backpack.jpg" alt="Blue Hipster Backpack">
-                            <p class="product-type">Shirts</p>
-                            <h4>Cotton Yellow Tshirt</h4>
-                            <p class="price">$39.00</p>
-                        </div>
-                    </div>
-                    <div class="carousel-cell">
-                        <div class="overall bestlistbox">
-                            <img src="images/demin-overall-shorts.jpg" alt="Demin Overall Shorts">
-                            <p class="product-type">Shirts</p>
-                            <h4>Cotton Yellow Tshirt</h4>
-                            <p class="price">$39.00</p>
-                        </div>
-                    </div>
-                    <div class="carousel-cell">
-                        <div class="pinkdress bestlistbox">
-                            <img src="images/pink-dotted-dress.jpg" alt="Pink Dotted Dress">
-                            <p class="product-type">Shirts</p>
-                            <h4>Cotton Yellow Tshirt</h4>
-                            <p class="price">$39.00</p>
-                        </div>
-                    </div>
-                    <div class="carousel-cell">
-                        <div class="bluedress bestlistbox">
-                            <img src="images/blue-silk-dress.jpg" alt="Blue Silk Dress">
-                            <p class="product-type">Shirts</p>
-                            <h4>Cotton Yellow Tshirt</h4>
-                            <p class="price">$39.00</p>
-                        </div>
-                    </div>
-                    <div class="carousel-cell">
-                        <div class="yellowshirt bestlistbox">
-                            <img src="images/cotton-yellow-tshirt.jpg" alt="Cotton Yellow Tshirt">
-                            <p class="product-type">Shirts</p>
-                            <h4>Cotton Yellow Tshirt</h4>
-                            <p class="price">$39.00</p>
-                        </div>
-                    </div>
-                    <div class="carousel-cell">
-                    </div>
-                </div>
-            </div> -->
+
     </section>
     <!-- info/subscribe -->
-    <section class="signup">
+    <section class="signup" id="updates">
         <div class="signup-text">
             <h2>Sign-up for <span class="bbold">Updates</span> </h2>
             <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free
                 style
                 tips from our blog. Unsubscribe at any time.</p>
-            <form class="emailform">
-                <input type="email" name="your_email" class="your-email" value="" placeholder="Your Email">
+            <form class="emailform" id="emailform">
+                <input type="email" name="your_email" class="your-email" id="youremail" value=""
+                    placeholder="Your Email">
                 <input type="submit" name="subscribe" value="Subscribe" class="subscribe">
             </form>
         </div>
@@ -288,6 +222,7 @@
 
     </footer>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
