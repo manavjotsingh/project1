@@ -252,16 +252,9 @@ h2 {
     max-width: 77.5rem;
     padding: 4rem 0;
 
+
 }
 
-/* // changed the class name to main-carousel
-
-    .bestsellers-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-} */
 
 .bestsellers h2 {
     text-align: center;
@@ -272,6 +265,9 @@ h2 {
     text-align: center;
     font-family: "Raleway";
     color: #969696;
+    margin: .5rem 0rem;
+
+
 }
 
 .product-type {
@@ -289,6 +285,14 @@ h2 {
 
 .price {
     margin-bottom: 1rem;
+}
+
+.tocart {
+    background-color: #e2574c;
+    border-radius: 50px;
+    color: white;
+    padding: .5rem 1.5rem;
+
 }
 
 
@@ -433,6 +437,8 @@ flex-direction: column; */
     width: 100%;
     text-align: center;
   }
+
+
 
 /* tablet and desktop css */
 
