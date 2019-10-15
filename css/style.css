@@ -24,7 +24,7 @@ html {
     justify-content: space-between;
     padding: 16px 20px 8px 20px;
     text-transform: uppercase;
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     margin: auto;
     background: white;
     position: fixed; /* top left and right are 0 to avoid unintended margins and padding*/
@@ -119,9 +119,9 @@ html {
 
 }
 
-.banner h2 {
+.collection {
     font-size: 1rem;
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     /* padding-bottom: 11px; */
     text-transform: uppercase;
 }
@@ -129,7 +129,7 @@ html {
 .seasons {
     font-size: 2rem;
     /* padding-top: 9px; */
-    font-family: "Playfair Display";
+    font-family: "Playfair Display", serif;
 }
 
 /* about section css */
@@ -152,8 +152,8 @@ html {
 }
 
 h2 {
-    font-size: 2rem;
-    font-family: "Playfair Display";
+    font-size: 2.3rem;
+    font-family: "Playfair Display", serif;
     font-style: italic;
     margin: 0px 0px 24px 0px;
 }
@@ -164,15 +164,16 @@ h2 {
 }
 
 .about p {
-    font-family: "Raleway";
-    font-size: 1rem;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.15rem;
     line-height: 2;
+    color: #2d2d2d;
 }
 
 /* shop css section */
 
 .shop {
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     text-transform: uppercase;
     font-size: 2rem;
     /* height: 31.5rem; */
@@ -263,7 +264,7 @@ h2 {
 .bestlistbox {
     /* padding: 3rem 2rem; */
     text-align: center;
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     color: #969696;
     margin: .5rem 0rem;
 
@@ -279,7 +280,7 @@ h2 {
 .bestlistbox h4 {
     margin-bottom: 1rem;
     color: #e2574c;
-    font-family: "Playfair";
+    font-family: "Playfair", serif;
     font-size: 1.5rem;
 }
 
@@ -326,7 +327,7 @@ h2 {
 
 .signup p {
     line-height: 2;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     text-align: center;
 }
 
@@ -391,23 +392,23 @@ flex-direction: column; */
 .copyright {
     padding-bottom: 1rem;
     line-height: 1.5;
-    font-family: "Playfair Display";
+    font-family: "Playfair Display", serif;
 }
 
 .contact {
     padding-bottom: 1rem;
-    font-family: "Playfair Display";
+    font-family: "Playfair Display", serif;
 }
 
 .socialmedia {
     margin-top: 2rem;
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
 }
 
 .address {
     color: #969696;
     line-height: 1.5;
-    font-family: "Playfair Display";
+    font-family: "Playfair Display", serif;
 }
 
 .socialmedia ul {
@@ -479,6 +480,10 @@ html {
     .seasons {
         font-size: 3rem;
         /* about css for desktop */
+    }
+
+    .collection{
+        font-size: 1.25rem;
     }
     .about div {
         max-width: 45rem;

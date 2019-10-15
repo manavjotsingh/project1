@@ -14,6 +14,7 @@ const submittedEmail = eMail.nodeValue;
 
 if (submittedEmail !== "") {
   alert ("Thanks for subscribing!");
+  eMail.value = ''
 }
 });
 
